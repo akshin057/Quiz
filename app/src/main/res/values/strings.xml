@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="best_result">Ваш уровень знаний истории великолепный!!!</string>
+    <string name="great_result">Ваш уровень знаний истории хороший!!!</string>
+    <string name="normal_result">Ваш уровень знаний истории удовлетворительный!!!</string>
+    <string name="bad_result">Ваш уровень знаний истории неудовлетворительный!!!</string>
+    <string name="terrible_result">Ваш уровень знаний истории ужасен!!!</string>
+    <string name="worst_result">Вы ничего не знаете об истории!!!</string>
+    <string name="right_answer">Ваш ответ правильный</string>
+    <string name="wrong_answer">Ваш ответ неверный</string>
+    <string name="answer">Ответить</string>
+    <string name="next">Следующий вопрос</string>
+
+
+</resources>

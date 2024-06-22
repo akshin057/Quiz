@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthQuestion"
+    android:background="@color/back">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarMainTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondLogoIV"
+        android:layout_width="350sp"
+        android:layout_height="250sp"
+        android:src="@drawable/img_4"
+        android:layout_marginTop="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarMainTB" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondLogoIV">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Какой царь построил русский флот?"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <RadioButton
+            android:id="@+id/firstAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Михаил Романович"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:id="@+id/secondAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Екатерина II"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:id="@+id/thirdAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Иван III"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:id="@+id/fourthAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Петр I"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRG" />
+
+    <Button
+        android:id="@+id/nextAnswerBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/items"
+        android:text="Ответить"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
